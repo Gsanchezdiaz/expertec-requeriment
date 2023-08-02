@@ -1,0 +1,12 @@
+INSTRUCCIONES
+----------------------------------------------------------------------
+1.- Crear base de datos en postgresql v.15 con el nombre "expert-requeriments"
+(Es posible crear base de datos con otro nombre pero se tedra que espesificar dicho nombre en la ruta \expert-requeriments\Backend\src\db.js)
+Ejemplo
+`postgres://postgres:root@localhost/expert-requeriments` 
+----------------------------------------------------------------------
+2.- Instalar los paquetes con el comando: mpm install
+tanto para el frontend como para el backend
+----------------------------------------------------------------------
+3.- Crear un usuario administrador en la base de datos para poder iniciar sesión.
+----------------------------------------------------------------------

@@ -1,19 +1,30 @@
 .mainDiv {
   display: flex;
-  margin-top: 1rem;
+  
   flex-direction: column;
   text-align: center;
 }
 
 .search {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 1rem;
+  font-size: var(--font-size-button);
+  margin-top: 1rem;
+}
+
+.searchInput{
+  border: 0;
+  margin: 0 1rem;
 }
 
 .buttonSearch {
-  margin-left: 5px;
-  background-color: white;
-  padding-left: 9px;
-  padding-right: 9px;
-  border-radius: 1rem;
+  background-color: #ff4949;
+  border-radius: 7px;
+  padding: 0.5rem 1.125rem;
+  box-sizing: border-box;
+  color: var(--contrast-light-color);
+  font-size: var(--font-size-button);
+  
 }

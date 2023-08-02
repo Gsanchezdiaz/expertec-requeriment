@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "../assets/css/blog.css";
-import { buscar } from "../api/api";
+
 import ListCategories from "../components/ListCategories";
 import ListPost from "../components/ListPost";
 import Subcategoria from "./Subcategoria";
@@ -17,11 +17,7 @@ const Categoria = () => {
   const { id } = useParams();
   const url = useResolvedPath("").pathname;
 
-  // useEffect(() => {
-  //   buscar(`/categorias?id=${id}`, (response) => {
-  //     setSubcategorias(response[0].subcategorias);
-  //   });
-  // }, [id]);
+  
   return (
     <>
       <div className="container">

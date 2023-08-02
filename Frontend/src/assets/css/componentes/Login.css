@@ -1,0 +1,51 @@
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 30rem;
+}
+
+.contenedor form {
+  padding: 2.18rem 5.93rem;
+  background-color: #f7f7f7;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imagen{
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+}
+
+.errors {
+  color: red;
+  display: block;
+  /* width: 25rem;
+  margin-left: 25rem; */
+}
+
+.labelX {
+  background-color: #97dde7;
+  font-weight:500;
+  color: black;
+  border-radius: 5px;
+  padding: 4px;
+  width: 100%;
+  /* width: 25rem;
+  margin-left: 25rem; */
+}
+
+.input {
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 7px;
+  width: 300px;
+  /* width: 25rem;
+  margin-left: 25rem; */
+}
+

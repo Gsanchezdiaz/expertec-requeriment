@@ -44,8 +44,11 @@ export default function Users() {
 
   return (
     <div className={m.mainDiv}>
+      <div className="container">
+        <h2 className="title-page">Lista Usuarios</h2>
+      </div>
       <div className={m.search}>
-        <input type="search" value={search} onChange={handleSearch} />
+        <input className={m.searchInput} type="search" value={search} placeholder="Nombre de usuario" onChange={handleSearch} />
         <button
           className={m.buttonSearch}
           value={search}
@@ -58,12 +61,12 @@ export default function Users() {
 
       <section className="posts container">
         {users?.map((users) => {
-          const { id, nombres, apellidos } = users;
+          const { id, nombres, apellidos, empresa } = users;
           return (
             <Link to={`/UsersDetail/${id}`} className={`post__card`} key={id}>
               <article>
-                <h3 className="post-card__title">{nombres}</h3>
-                <p className="post-card__meta">{apellidos}</p>
+                <h3 className="post-card__title">{empresa}</h3>
+                <p className="post-card__meta">{nombres} {apellidos}</p>
               </article>
             </Link>
           );

@@ -16,10 +16,21 @@
 .ulMain {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 2rem;
 }
 
 .p {
   word-wrap: break-word;
+  margin-bottom: 1rem;
+  line-height: 1.3rem;
+  text-align: justify;
 }
+
+.estado {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self:flex-end;
+}
+

@@ -33,6 +33,7 @@
 .post-card__title {
   font-size: var(--font-size-card-post-title);
   font-weight: var(--font-card);
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -56,6 +57,12 @@
 
 .post {
   margin-top: 25px;
+}
+
+.separador {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (min-width: 900px) {

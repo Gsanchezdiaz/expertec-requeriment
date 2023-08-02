@@ -61,9 +61,13 @@ export default function AddStaff() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={m.form}>
+    <div className="flex flex--center flex--column">
+    <div className={m.contenedor}>
+        <h2 className="title-page">Nuevo usuario</h2>
+      </div>
+    <form onSubmit={handleSubmit} >
       <div className={m.mainDiv}>
-        <label htmlFor="">Nombres</label>
+        <label className={m.label} htmlFor="">Nombres</label>
         <input
           className={m.input}
           type="text"
@@ -151,8 +155,8 @@ export default function AddStaff() {
           />
         </div>
 
-        <button className={m.button}>Send</button>
+        <button className={m.button}>Agregar</button>
       </div>
     </form>
-  );
+    </div>);
 }

@@ -104,51 +104,65 @@ const ListPost = () => {
           estadoFinalDev,
         } = post;
         return (
-          <div className={`post__card post-card--${prioridad}`} key={id}>
+          <div className={`post__card separador post-card--${prioridad}`} key={id}>
+            
             <Link to={`/posts/${id}`}>
               <article>
                 <h3 className="post-card__title">{title}</h3>
                 <p className={m.p}>{descripcion}</p>
               </article>
             </Link>
-
+            <div>
+            <h5 className="post-card__title">Estado</h5>
             {(administrador || desarrollador) && (
               <div>
+                
                 {estadoFinalDev ? (
+                  <div className={m.estado} >
+                    Desarrollador 
                   <button value={id} onClick={handleToggle}>
-                    Desarrollador ✅
+                    
+                    ✅
                   </button>
-                ) : (
+                  </div>) : (
+                    <div className={m.estado} >
+                      Desarrollador 
                   <button value={id} onClick={handleToggle}>
-                    Desarrollador ❌
+                    ❌
                   </button>
-                )}
+                  </div>)}
               </div>
             )}
 
             {administrador && (
               <div>
                 {estadoFinalAdmin ? (
+                  <div className={m.estado} >
+                    Administrador
                   <button value={id} onClick={handleToggleAdmin}>
-                    Administrador ✅
+                    ✅
                   </button>
-                ) : (
+                </div>) : (
+                  <div className={m.estado} >
+                    Administrador
                   <button value={id} onClick={handleToggleAdmin}>
-                    Administrador ❌
+                    ❌
                   </button>
-                )}
+                </div>)}
               </div>
             )}
-
+            
+            
             {cliente && (
               <div>
                 {estadoFinalAdmin && estadoFinalDev ? (
-                  <div value={id}>Terminado ✅</div>
+                  <div className={m.estado} value={id}><p>Terminado</p><p> ✅</p></div>
                 ) : (
-                  <div value={id}>Pendiente ❓</div>
+                  <div className={m.estado} value={id}><p>Pendiente</p> <p>❓</p></div>
                 )}
               </div>
             )}
+            </div>
           </div>
         );
       })}
